@@ -38,17 +38,21 @@
 }
 
 .color-code {
-    margin-top: 10px;
-    font-size: 14px;
+    font-size: 12px; /* Reduce text size */
     color: #fff;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 5px 8px;
-    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.4); /* Make the background more subtle */
+    padding: 4px 6px; /* Reduce padding */
+    border-radius: 4px;
     display: inline-block;
     position: absolute;
-    bottom: 10px;
+    bottom: 5px; /* Adjust position to avoid overlap */
     left: 50%;
     transform: translateX(-50%);
+    max-width: 90%; /* Ensure text does not overflow */
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Prevent text from being too long */
 }
 
 @keyframes fadeInUp {
